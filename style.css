@@ -1,0 +1,262 @@
+body {
+  font-family: Poppins, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #000;
+  color: #fff;
+}
+
+/* WhatsApp Button */
+.whatsapp-icon {
+  display: inline-block;
+  background-color: #25d366;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all .3s ease;
+}
+.whatsapp-icon i {
+  margin-right: 8px;
+  font-size: 22px;
+  vertical-align: middle;
+}
+.whatsapp-icon:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000 !important;
+}
+.nav-link {
+  transition: .3s ease;
+}
+.nav-link.active,
+.nav-link:hover {
+  color: #fff !important;
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url(https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1400&q=80)
+    center center / cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .7);
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+.hero h3 {
+  font-size: 3.5rem;
+  color: #fff;
+}
+.hero p {
+  color: #ddd;
+  font-size: 1.2rem;
+}
+
+/* Buttons */
+.btn-light {
+  background-color: #fff;
+  border: none;
+  transition: .3s;
+}
+.btn-light:hover {
+  background-color: #e5e5e5;
+  color: #000;
+}
+.btn-outline-light:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* About Section */
+#about h2 {
+  font-size: 1.9rem;
+  color: #fff;
+}
+#about p {
+  line-height: 1.7;
+}
+#about ul li span {
+  color: #e0e0e0;
+}
+#about img {
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+#about img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 255, 255, .2);
+}
+
+/* Services Section */
+#services {
+  background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+}
+#services .card {
+  transition: transform .4s ease, box-shadow .4s ease;
+  border-radius: 15px;
+}
+#services .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(255, 255, 255, .1);
+}
+#services .icon-circle {
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 0 20px rgba(255, 69, 0, .5);
+  top: -25px;
+}
+#services .card-body h5 {
+  color: #fff;
+}
+#services .card-body p {
+  color: #bfbfbf;
+  font-size: .95rem;
+}
+
+/* Dark Theme (merged) */
+.dark-theme {
+  background-color: #0f0f0f;
+  color: #f5f5f5;
+  padding: 80px 0;
+}
+.dark-theme .section-title h2 {
+  color: #fff;
+}
+.dark-theme .section-title p {
+  color: #bbb;
+}
+.dark-theme .nav-tabs {
+  border-bottom: 1px solid #2a2a2a;
+}
+.dark-theme .nav-link {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  transition: all .3s ease;
+}
+.dark-theme .nav-link i {
+  font-size: 28px;
+  color: #00bcd4;
+  margin-bottom: 10px;
+}
+.dark-theme .nav-link.active,
+.dark-theme .nav-link:hover {
+  background: #1e1e1e;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 188, 212, .4);
+}
+.dark-theme .nav-link.active i {
+  color: #00e5ff;
+}
+.dark-theme ul li {
+  color: #bbb;
+  margin-bottom: 10px;
+}
+.dark-theme ul li i {
+  color: #00bcd4;
+  margin-right: 8px;
+}
+.dark-theme img {
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 188, 212, .15);
+  transition: transform .3s ease;
+}
+.dark-theme img:hover {
+  transform: scale(1.03);
+}
+
+/* Info and Form Items */
+.dark-theme .info-item {
+  background: #1b1b1b;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, .4);
+  transition: all .3s ease;
+}
+.dark-theme .info-item:hover {
+  background: #212121;
+  box-shadow: 0 6px 25px rgba(0, 188, 212, .3);
+}
+.dark-theme .info-item i {
+  font-size: 32px;
+  color: #00bcd4;
+  margin-bottom: 12px;
+}
+.dark-theme .php-email-form {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, .6);
+}
+.dark-theme .php-email-form .form-control {
+  background: #121212;
+  border: 1px solid #333;
+  color: #eee;
+  border-radius: 8px;
+  padding: 12px;
+  transition: border .3s, background .3s;
+}
+.dark-theme .php-email-form .form-control:focus {
+  border-color: #00bcd4;
+  background: #181818;
+  box-shadow: 0 0 5px rgba(0, 188, 212, .4);
+}
+.dark-theme .php-email-form button[type=submit] {
+  background: linear-gradient(90deg, #00bcd4, #0097a7);
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  transition: all .3s ease;
+  font-weight: 500;
+}
+.dark-theme .php-email-form button[type=submit]:hover {
+  background: linear-gradient(90deg, #00e5ff, #00bcd4);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 188, 212, .6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h3 {
+    font-size: 2.3rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .navbar {
+    background: #000 !important;
+  }
+}
+
+/* footer */
+footer {
+  background-color: #000;
+  color: #bbb;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto;
+  width: 100%;
+}
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
