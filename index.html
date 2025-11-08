@@ -253,13 +253,14 @@
       <a href="https://wa.me/+917276082328" target="_blank" class="btn btn-success px-4 py-2 rounded-pill">
         <i class="fab fa-whatsapp"></i> Chat on WhatsApp
       </a>
+      <a href="https://form.jotform.com/253062170802447" class="btn-gradient px-4 py-2 rounded-pill">BOOK YOUR FREE TRIAL NOW</a>
     </div>
   </div>
 </section>
 
 <!-- ===== TIMER SECTION (SAME THEME AS HERO SECTION) ===== -->
-<section class="timer-section text-center py-5 text-white mt-3" style="background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('your-background.jpg') center/cover no-repeat;">
-  <div class="container">
+<section class="timer-section text-center text-white">
+  <div class="container py-5">
     <h3 class="mb-3 text-light">⏰ Join the World's First Exclusive AI Trading Chatbot Webinar!</h3>
     <h4 class="text-info mb-4">📅 Date: 23 November | 🕢 Time: 7:30 PM</h4>
 
@@ -275,6 +276,11 @@
 
 <!-- ===== CSS STYLING ===== -->
 <style>
+body {
+  background-color: #000;
+  color: #fff;
+}
+
 .hero-section {
   background-color: #000;
   padding: 80px 0;
@@ -294,32 +300,39 @@
   opacity: 0.9;
 }
 
-body {
-  background-color: #000;
-  color: #fff;
-}
-
 .timer-section {
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('your-background.jpg') center/cover no-repeat;
+  margin-top: 0;
 }
 
+/* ===== MOBILE FIX ===== */
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0 40px;
+  }
   .hero-section h1 {
     font-size: 1.8rem;
   }
   .hero-section p {
     font-size: 1rem;
   }
+  .d-flex.gap-3 {
+    gap: 1rem !important;
+  }
+  .timer-section .container {
+    padding: 40px 0 30px !important;
+  }
+  .timer-section {
+    margin-top: -10px !important;
+  }
   #countdown {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 </style>
 
 <!-- ===== JAVASCRIPT TIMER ===== -->
 <script>
-// Set target date and time — 23 November, 7:30 PM (local time)
 const targetDate = new Date("Nov 23, 2025 19:30:00").getTime();
 
 function updateCountdown() {
@@ -343,6 +356,7 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 </script>
+
 
 
 
