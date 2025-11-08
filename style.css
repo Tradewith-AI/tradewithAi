@@ -40,7 +40,7 @@ body {
 }
 
 /* Hero Section */
-/* .hero {
+.hero {
   height: 100vh;
   background: url(https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1400&q=80)
     center center / cover no-repeat;
@@ -65,9 +65,9 @@ body {
   color: #ddd;
   font-size: 1.2rem;
 }
- */
+
 /* Buttons */
-/* .btn-light {
+.btn-light {
   background-color: #fff;
   border: none;
   transition: .3s;
@@ -80,7 +80,7 @@ body {
   background-color: #fff;
   color: #000;
 }
- */
+
 /* About Section */
 #about h2 {
   font-size: 1.9rem;
